@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Camion.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab01-recordando-poo-djsg2021utec</a> &gt; <a href="index.source.html" class="el_package">cs.ing.software.lab1</a> &gt; <span class="el_source">Camion.java</span></div><h1>Camion.java</h1><pre class="source lang-java linenums">package cs.ing.software.lab1;
+import java.lang.*;
+import java.text.DecimalFormat;
+
+public class Camion extends Vehiculo{
+    public Camion(double _consumo, double _capacidad, double _cantidad) {
+<span class="fc" id="L7">        super(_consumo, _capacidad, _cantidad);</span>
+<span class="fc" id="L8">    }</span>
+<span class="fc" id="L9">    DecimalFormat df1 = new DecimalFormat(&quot;0.00&quot;);</span>
+<span class="fc" id="L10">    DecimalFormat df2 = new DecimalFormat(&quot;0.0&quot;);</span>
+
+    String abastecer(double litros){
+<span class="nc" id="L13">        double disponible = this.capacidad - this.cantidad;</span>
+<span class="nc bnc" id="L14" title="All 2 branches missed.">        if (litros &gt; disponible){</span>
+<span class="nc" id="L15">            return  &quot;El camion no se puede reabastecer, el tanque esta lleno&quot;;</span>
+        }
+        else {
+<span class="nc" id="L18">            this.cantidad += litros;</span>
+<span class="nc" id="L19">            return  &quot;La cantidad de combustible es: &quot;+cantidad;</span>
+        }
+    }
+    String conduccion(double distancia){
+<span class="fc" id="L23">        double requiere = distancia*consumo;</span>
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if (cantidad-requiere&lt;0){</span>
+<span class="nc" id="L25">            return &quot;El camion necesita reabastecimiento de combustible&quot;;</span>
+        }
+        else{
+<span class="fc" id="L28">            this.cantidad -= requiere;</span>
+<span class="fc" id="L29">            return (&quot;El camion viajó &quot;+ df2.format(distancia) +&quot; km y aún tiene &quot;+df1.format(cantidad)+ &quot; de combustible&quot;);</span>
+        }
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
