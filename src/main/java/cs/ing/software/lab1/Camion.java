@@ -2,31 +2,35 @@ package cs.ing.software.lab1;
 import java.lang.*;
 import java.text.DecimalFormat;
 
-public class Camion extends Vehiculo{
-    public Camion(double _consumo, double _capacidad, double _cantidad) {
-        super(_consumo, _capacidad, _cantidad);
-    }
-    DecimalFormat df1 = new DecimalFormat("0.00");
-    DecimalFormat df2 = new DecimalFormat("0.0");
+import java.text.DecimalFormat;
 
-    String abastecer(double litros){
-        double disponible = this.capacidad - this.cantidad;
-        if (litros > disponible){
-            return  "El camion no se puede reabastecer, el tanque esta lleno";
-        }
-        else {
-            this.cantidad += litros;
-            return  "La cantidad de combustible es: "+cantidad;
-        }
+public class Camion  extends Vehiculo{
+
+    Camion(double prCantidad, double prConsumo, double prCapacidad) {
+        super(prCantidad, prConsumo, prCapacidad);
     }
-    String conduccion(double distancia){
-        double requiere = distancia*consumo;
-        if (cantidad-requiere<0){
-            return "El camion necesita reabastecimiento de combustible";
+    String  abastecer(double prLitros){
+        double freeSpace = this.capacidad - this.cantidad;
+        if (prLitros > freeSpace)
+        {
+            return "Camion no se puede reabastecer el tanque, esta lleno";
+
         }
         else{
-            this.cantidad -= requiere;
-            return ("El camion viajó "+ df2.format(distancia) +" km y aún tiene "+df1.format(cantidad)+ " de combustible");
+            this.cantidad += (prLitros * 0.95);
+            return "La cantidad de combustible del camion es: "+cantidad;
+        }
+    }
+    @Override
+    String fuelCantidad(double prkm) {
+        DecimalFormat df = new DecimalFormat("0.00");
+        double fuelRequiere = prkm*this.consumo;
+        if(cantidad-fuelRequiere<0){
+            return "Camion necesita reabastecimiento de combustible";
+        }
+        else{
+            this.cantidad -=fuelRequiere;
+            return ("Camion viajo " +(prkm)+" km y aun tiene " +df.format(cantidad)+ " de combustible");
         }
     }
 }

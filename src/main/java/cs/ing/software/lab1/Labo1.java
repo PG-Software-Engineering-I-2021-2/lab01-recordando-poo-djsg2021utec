@@ -1,24 +1,35 @@
 package cs.ing.software.lab1;
 import java.util.logging.Logger;
 
-import java.lang.*;
-import java.text.DecimalFormat;
+
 
 public class Labo1 {
     static final Logger logger = Logger.getLogger(Labo1.class.getName());
-    static double ConsumoAutomovil = 0.9;
-    static double ConsumoCamion = 1.6;
-    static double VolumenTanque = 100;
-
+    static double consumoVehiculo = 0.9;
+    static double consumoCamion = 1.6;
+    static double capacidadTotal = 100;
+    static double fuelCantidad = 10;
     public static void main(String[ ] args) {
-        double cantidad= 10;
-        Automovil toyota= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
-        logger.info(toyota.conduccion(4));
-        Automovil hyundai= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
-        logger.info(hyundai.conduccion(12));
-        Automovil tercel= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
-        logger.info(tercel.conduccion(6));
-        Camion volvo = new Camion(ConsumoCamion, VolumenTanque, cantidad);
-        logger.info(volvo.conduccion(4));
+
+
+
+//Ejemplo 1
+        Automovil lAutomovil1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+
+        String rpta1 = lAutomovil1.fuelCantidad(4);
+        logger.info(rpta1);
+
+//Ejemplo 2
+        Automovil lAutomovil2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        String rpta2 = lAutomovil2.fuelCantidad(12);
+        logger.info(rpta2);
+
+//Ejemplo 3
+        Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
+        String rpta3 = lCamion.fuelCantidad(4);
+        logger.info(rpta3);
+
+
+
     }
 }
