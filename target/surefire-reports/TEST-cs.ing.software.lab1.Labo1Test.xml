@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="cs.ing.software.lab1.Labo1Test" time="0.027" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="cs.ing.software.lab1.Labo1Test" time="0.022" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="16.0.2+7-67"/>
@@ -59,8 +59,13 @@
     <property name="sun.stdout.encoding" value="cp850"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test01" time="0.024"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test01" time="0.02"/>
   <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test02" time="0"/>
-  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test03" time="0.001"/>
-  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test04" time="0.002"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test03" time="0"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test05" time="0.001"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test06" time="0"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test07" time="0"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test08" time="0"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test09" time="0"/>
+  <testcase classname="cs.ing.software.lab1.Labo1Test" name="Test10" time="0.001"/>
 </testsuite>

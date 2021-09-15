@@ -1,69 +1,0 @@
-
-;cs.ing.software.lab1.Camion#conduccion(D)Ljava/lang/String;{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java ("2"1*∏
-2{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (G"µ
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (H64
-2El camion necesita reabastecimiento de combustible*ù
-1{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (œ
-Ã
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java( (+
-%0java.text.DecimalFormat"__id*(*&
-cs.ing.software.lab1.Camion"
-df2Ä˝
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java( (=
-%1java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*
-
-%0java.text.DecimalFormat*
-""2	format(D)”
-–
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (=
-%2java.lang.String"__concat*
-El camion viaj√≥ *
-
-%1java.lang.String”
-–
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (Q
-%3java.lang.String"__concat*
-
-%2java.lang.String*
- km y a√∫n tiene œ
-Ã
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.javaR (U
-%4java.text.DecimalFormat"__id*(*&
-cs.ing.software.lab1.Camion"
-df1Ä˝
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.javaR (f
-%5java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*
-
-%4java.text.DecimalFormat*
-""2	format(D)÷
-”
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (f
-%6java.lang.String"__concat*
-
-%3java.lang.String*
-
-%5java.lang.String—
-Œ
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java (y
-%7java.lang.String"__concat*
-
-%6java.lang.String*
- de combustible"ó
-{
-qC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Camion.java ({
-
-%7java.lang.String:
-""B
-cs.ing.software.lab1.Camion

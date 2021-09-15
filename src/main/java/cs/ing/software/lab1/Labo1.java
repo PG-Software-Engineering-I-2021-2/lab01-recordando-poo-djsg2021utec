@@ -13,23 +13,30 @@ public class Labo1 {
 
 
 
-//Ejemplo 1
-        Automovil lAutomovil1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+//Auto 1
+        Automovil toyota = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(toyota.fuelCantidad(4));
 
-        String rpta1 = lAutomovil1.fuelCantidad(4);
-        logger.info(rpta1);
+//Auto 2
+        Automovil ford = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(ford.fuelCantidad(12));
 
-//Ejemplo 2
-        Automovil lAutomovil2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        String rpta2 = lAutomovil2.fuelCantidad(12);
-        logger.info(rpta2);
+//Auto 3
 
-//Ejemplo 3
-        Camion lCamion = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
-        String rpta3 = lCamion.fuelCantidad(4);
-        logger.info(rpta3);
-
-
-
+//Camion 1
+        Camion cam01 = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
+        logger.info(cam01.fuelCantidad(4));
+//Camion 2
+        Camion cam02 = new Camion(20,consumoCamion,capacidadTotal);
+        logger.info(cam02.fuelCantidad(8));
+//Camion 3
+        Camion cam03 = new Camion(10,consumoCamion,capacidadTotal);
+        logger.info(cam03.fuelCantidad(10));
+//Camion 4
+        Camion cam04 = new Camion(5,consumoCamion,capacidadTotal);
+        logger.info(cam04.fuelCantidad(1));
+//Camion 5
+        Camion cam05 = new Camion(40,consumoCamion,105);
+        logger.info(cam05.fuelCantidad(100));
     }
 }

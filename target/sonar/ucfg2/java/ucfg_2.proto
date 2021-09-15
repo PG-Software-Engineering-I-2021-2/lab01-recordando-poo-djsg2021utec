@@ -1,69 +1,0 @@
-
->cs.ing.software.lab1.Automovil#conduccion(D)Ljava/lang/String;~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java ("2"1*Á
-2~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (J"»
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (K97
-5El automovil necesita reabastecimiento de combustible*Ä
-1~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (Õ
-Ò
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java+ (.
-%0java.text.DecimalFormat"__id*+*) 
-cs.ing.software.lab1.Automovil"
-df2ƒ€
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java+ (@
-%1java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*
-
-%0java.text.DecimalFormat*
-""2	format(D)Ù
-Ö
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (@
-%2java.lang.String"__concat*
-El automovil viajÃ³ *
-
-%1java.lang.StringÖ
-Ó
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (T
-%3java.lang.String"__concat*
-
-%2java.lang.String*
- km y aÃºn tiene Õ
-Ò
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.javaU (X
-%4java.text.DecimalFormat"__id*+*) 
-cs.ing.software.lab1.Automovil"
-df1ƒ€
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.javaU (i
-%5java.lang.String"2java.text.NumberFormat#format(D)Ljava/lang/String;*
-
-%4java.text.DecimalFormat*
-""2	format(D)Ù
-Ö
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (i
-%6java.lang.String"__concat*
-
-%3java.lang.String*
-
-%5java.lang.StringÔ
-Ñ
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (|
-%7java.lang.String"__concat*
-
-%6java.lang.String*
- de combustible"š
-~
-tC:/Users/danjo/IdeaProjects/lab1/lab01-recordando-poo-djsg2021utec/src/main/java/cs/ing/software/lab1/Automovil.java (~
-
-%7java.lang.String:
-""B" 
-cs.ing.software.lab1.Automovil

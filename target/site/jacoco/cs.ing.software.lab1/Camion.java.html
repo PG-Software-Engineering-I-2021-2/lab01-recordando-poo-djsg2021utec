@@ -2,31 +2,35 @@
 import java.lang.*;
 import java.text.DecimalFormat;
 
-public class Camion extends Vehiculo{
-    public Camion(double _consumo, double _capacidad, double _cantidad) {
-<span class="fc" id="L7">        super(_consumo, _capacidad, _cantidad);</span>
-<span class="fc" id="L8">    }</span>
-<span class="fc" id="L9">    DecimalFormat df1 = new DecimalFormat(&quot;0.00&quot;);</span>
-<span class="fc" id="L10">    DecimalFormat df2 = new DecimalFormat(&quot;0.0&quot;);</span>
+import java.text.DecimalFormat;
 
-    String abastecer(double litros){
-<span class="nc" id="L13">        double disponible = this.capacidad - this.cantidad;</span>
-<span class="nc bnc" id="L14" title="All 2 branches missed.">        if (litros &gt; disponible){</span>
-<span class="nc" id="L15">            return  &quot;El camion no se puede reabastecer, el tanque esta lleno&quot;;</span>
-        }
-        else {
-<span class="nc" id="L18">            this.cantidad += litros;</span>
-<span class="nc" id="L19">            return  &quot;La cantidad de combustible es: &quot;+cantidad;</span>
-        }
-    }
-    String conduccion(double distancia){
-<span class="fc" id="L23">        double requiere = distancia*consumo;</span>
-<span class="pc bpc" id="L24" title="1 of 2 branches missed.">        if (cantidad-requiere&lt;0){</span>
-<span class="nc" id="L25">            return &quot;El camion necesita reabastecimiento de combustible&quot;;</span>
+public class Camion  extends Vehiculo{
+
+    Camion(double prCantidad, double prConsumo, double prCapacidad) {
+<span class="fc" id="L10">        super(prCantidad, prConsumo, prCapacidad);</span>
+<span class="fc" id="L11">    }</span>
+    String  abastecer(double cLitros){
+<span class="nc" id="L13">        double requiere = this.capacidad - this.cantidad;</span>
+<span class="nc bnc" id="L14" title="All 2 branches missed.">        if (0 &gt; requiere - cLitros)</span>
+        {
+<span class="nc" id="L16">            return &quot;Camion no se puede reabastecer el tanque, esta lleno&quot;;</span>
+
         }
         else{
-<span class="fc" id="L28">            this.cantidad -= requiere;</span>
-<span class="fc" id="L29">            return (&quot;El camion viajó &quot;+ df2.format(distancia) +&quot; km y aún tiene &quot;+df1.format(cantidad)+ &quot; de combustible&quot;);</span>
+<span class="nc" id="L20">            this.cantidad += (cLitros * 0.95);</span>
+<span class="nc" id="L21">            return &quot;La cantidad de combustible del camion es: &quot;+cantidad;</span>
+        }
+    }
+    @Override
+    String fuelCantidad(double ckm) {
+<span class="fc" id="L26">        DecimalFormat df = new DecimalFormat(&quot;0.00&quot;);</span>
+<span class="fc" id="L27">        double fuelRequiere = ckm*this.consumo;</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if(cantidad-fuelRequiere&lt;0){</span>
+<span class="fc" id="L29">            return &quot;Camion necesita reabastecimiento de combustible&quot;;</span>
+        }
+        else{
+<span class="fc" id="L32">            this.cantidad -=fuelRequiere;</span>
+<span class="fc" id="L33">            return (&quot;Camion viajo &quot; +(ckm)+&quot; km y aun tiene &quot; +df.format(cantidad)+ &quot; de combustible&quot;);</span>
         }
     }
 }

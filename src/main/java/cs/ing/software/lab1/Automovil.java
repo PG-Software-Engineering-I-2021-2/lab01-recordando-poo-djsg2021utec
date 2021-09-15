@@ -1,6 +1,5 @@
 package cs.ing.software.lab1;
 
-import java.text.DecimalFormat;
 
 public class Automovil extends Vehiculo{
 
@@ -8,10 +7,10 @@ public class Automovil extends Vehiculo{
         super(prCantidad, prConsumo, prCapacidad);
     }
 
-    String  abastecer(double prLitros) {
-        double freeSpace = this.capacidad - this.cantidad;
+    String  abastecer(double aLitros) {
+        double requiere = this.capacidad - this.cantidad;
 
-        if (prLitros > freeSpace)
+        if (0 > requiere-aLitros)
         {
             return "Automovil no se puede reabastecer el tanque, esta lleno";
 
