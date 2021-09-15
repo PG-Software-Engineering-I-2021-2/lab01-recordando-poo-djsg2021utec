@@ -14,14 +14,25 @@ public class Labo1 {
 
 
 //Auto 1
-        Automovil toyota = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        logger.info(toyota.fuelCantidad(4));
+        Automovil auto1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(auto1.fuelCantidad(4));
 
 //Auto 2
-        Automovil ford = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
-        logger.info(ford.fuelCantidad(12));
+        Automovil auto2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);
+        logger.info(auto2.fuelCantidad(12));
 
 //Auto 3
+        Automovil auto3 = new Automovil(25.8,0.91,105.6);
+        logger.info(auto3.fuelCantidad(4));
+//Auto 3
+        Automovil auto4 = new Automovil(25.8,1.1,105.6);
+        logger.info(auto4.fuelCantidad(7.9));
+//Auto 3
+        Automovil auto5 = new Automovil(8.9,0.9,120);
+        logger.info(auto5.fuelCantidad(10.6));
+//Auto 3
+        Automovil auto6 = new Automovil(50.5,0.91,105.6);
+        logger.info(auto6.fuelCantidad(20.3));
 
 //Camion 1
         Camion cam01 = new Camion(fuelCantidad,consumoCamion,capacidadTotal);

@@ -1,8 +1,7 @@
 package cs.ing.software.lab1;
-import java.lang.*;
-import java.text.DecimalFormat;
 
 import java.text.DecimalFormat;
+
 
 public class Camion  extends Vehiculo{
 

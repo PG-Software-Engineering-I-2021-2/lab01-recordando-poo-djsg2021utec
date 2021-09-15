@@ -1,6 +1,5 @@
 package cs.ing.software.lab1;
 
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -50,6 +49,38 @@ public class Labo1Test {
         Camion cam05 = new Camion(40,1.6,150);
         Assert.assertEquals( cam05 .fuelCantidad(100),"Camion necesita reabastecimiento de combustible");
     }
+    @Test
+    public void Test12() {
+        Automovil auto3 = new Automovil(25.8,0.91,105.6);
+        Assert.assertEquals(auto3.fuelCantidad(4),"Vehiculo viajo 4.0 km y aun tiene 22.16 de combustible");
+    }
+    @Test
+    public void Test13() {
+        Automovil auto4 = new Automovil(25.8,1.1,105.6);
+        Assert.assertEquals(auto4.fuelCantidad(7.9),"Vehiculo viajo 7.9 km y aun tiene 17.11 de combustible");
+
+    }
+    @Test
+    public void Test14() {
+        Automovil auto5 = new Automovil(8.9,0.9,120);
+        Assert.assertEquals(auto5.fuelCantidad(10.6),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test15() {
+        Automovil auto6 = new Automovil(50.5,0.91,105.6);
+        Assert.assertEquals(auto6.fuelCantidad(20.3),"Vehiculo viajo 20.3 km y aun tiene 32.03 de combustible");
+
+    }
+    @Test
+    public void Test16() {
+        Automovil auto7 = new Automovil(50.5,0.78,105.6);
+        Assert.assertEquals(auto7.fuelCantidad(20.8),"Vehiculo viajo 20.8 km y aun tiene 34.28 de combustible");
+
+    }
+    //Auto 3
+
+    //Auto 3
 
 
 
