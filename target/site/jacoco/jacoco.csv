@@ -2,4 +2,4 @@ GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_
 lab01-recordando-poo-djsg2021utec,cs.ing.software.lab1,Camion,32,49,2,2,5,8,2,3,1,2
 lab01-recordando-poo-djsg2021utec,cs.ing.software.lab1,Labo1,149,0,0,0,29,0,3,0,3,0
 lab01-recordando-poo-djsg2021utec,cs.ing.software.lab1,Vehiculo,0,55,0,2,0,11,0,3,0,2
-lab01-recordando-poo-djsg2021utec,cs.ing.software.lab1,Automovil,31,6,2,0,5,2,2,1,1,1
+lab01-recordando-poo-djsg2021utec,cs.ing.software.lab1,Automovil,0,37,0,2,0,7,0,3,0,2

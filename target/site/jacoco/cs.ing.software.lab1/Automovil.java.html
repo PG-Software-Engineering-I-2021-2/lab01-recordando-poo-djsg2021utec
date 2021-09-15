@@ -8,16 +8,16 @@ public class Automovil extends Vehiculo{
 <span class="fc" id="L8">    }</span>
 
     String  abastecer(double aLitros) {
-<span class="nc" id="L11">        double requiere = this.capacidad - this.cantidad;</span>
+<span class="fc" id="L11">        double requiere = this.capacidad - this.cantidad;</span>
 
-<span class="nc bnc" id="L13" title="All 2 branches missed.">        if (0 &gt; requiere-aLitros)</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (0 &gt; requiere-aLitros)</span>
         {
-<span class="nc" id="L15">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
+<span class="fc" id="L15">            return &quot;Automovil no se puede reabastecer el tanque, esta lleno&quot;;</span>
 
         }
         else{
-<span class="nc" id="L19">            cantidad += cantidad;</span>
-<span class="nc" id="L20">            return &quot;La cantidad de combustible del vehiculo es: &quot;+cantidad;</span>
+<span class="fc" id="L19">            cantidad += cantidad;</span>
+<span class="fc" id="L20">            return &quot;La cantidad de combustible del vehiculo es: &quot;+cantidad;</span>
         }
     }
 }

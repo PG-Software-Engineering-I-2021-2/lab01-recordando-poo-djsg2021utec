@@ -15,16 +15,16 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()I¿
+hashCode()java.lang.Object#hashCode()Iº
 cs.ing.software.lab1.Vehiculojava.lang.Object9
-<init>(DDD)*cs.ing.software.lab1.Vehiculo#<init>(DDD)VR
-fuelCantidad(D)?cs.ing.software.lab1.Vehiculo#fuelCantidad(D)Ljava/lang/String; 
+<init>(DDD)*cs.ing.software.lab1.Vehiculo#<init>(DDD)VN
+conduccion(D)=cs.ing.software.lab1.Vehiculo#conduccion(D)Ljava/lang/String; 
 cs.ing.software.lab1.Automovilcs.ing.software.lab1.Vehiculo:
 <init>(DDD)+cs.ing.software.lab1.Automovil#<init>(DDD)VM
-abastecer(D)=cs.ing.software.lab1.Automovil#abastecer(D)Ljava/lang/String;ì
+abastecer(D)=cs.ing.software.lab1.Automovil#abastecer(D)Ljava/lang/String;è
 cs.ing.software.lab1.Camioncs.ing.software.lab1.Vehiculo7
-<init>(DDD)(cs.ing.software.lab1.Camion#<init>(DDD)VP
-fuelCantidad(D)=cs.ing.software.lab1.Camion#fuelCantidad(D)Ljava/lang/String;J
+<init>(DDD)(cs.ing.software.lab1.Camion#<init>(DDD)VL
+conduccion(D);cs.ing.software.lab1.Camion#conduccion(D)Ljava/lang/String;J
 abastecer(D):cs.ing.software.lab1.Camion#abastecer(D)Ljava/lang/String;(
 java.io.Serializablejava.lang.Object'
 java.lang.Cloneablejava.lang.Objectï

@@ -27,27 +27,6 @@ public class Labo1 {
 //Auto 3
         Automovil auto4 = new Automovil(25.8,1.1,105.6);
         logger.info(auto4.conduccion(7.9));
-//Auto 3
-        Automovil auto5 = new Automovil(8.9,0.9,120);
-        logger.info(auto5.conduccion(10.6));
-//Auto 3
-        Automovil auto6 = new Automovil(50.5,0.91,105.6);
-        logger.info(auto6.conduccion(20.3));
 
-//Camion 1
-        Camion cam01 = new Camion(fuelCantidad,consumoCamion,capacidadTotal);
-        logger.info(cam01.conduccion(4));
-//Camion 2
-        Camion cam02 = new Camion(20,consumoCamion,capacidadTotal);
-        logger.info(cam02.conduccion(8));
-//Camion 3
-        Camion cam03 = new Camion(10,consumoCamion,capacidadTotal);
-        logger.info(cam03.conduccion(10));
-//Camion 4
-        Camion cam04 = new Camion(5,consumoCamion,capacidadTotal);
-        logger.info(cam04.conduccion(1));
-//Camion 5
-        Camion cam05 = new Camion(40,consumoCamion,105);
-        logger.info(cam05.conduccion(100));
     }
 }
