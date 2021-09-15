@@ -21,7 +21,7 @@ public class Camion  extends Vehiculo{
         }
     }
     @Override
-    String fuelCantidad(double ckm) {
+    String conduccion(double ckm) {
         DecimalFormat df = new DecimalFormat("0.00");
         double fuelRequiere = ckm*this.consumo;
         if(cantidad-fuelRequiere<0){

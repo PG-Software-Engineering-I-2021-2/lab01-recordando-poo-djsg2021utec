@@ -12,7 +12,7 @@ public class Vehiculo {
         this.capacidad = prCapacidad;
     }
 
-    String fuelCantidad(double prkm){
+    String conduccion(double prkm){
         DecimalFormat df = new DecimalFormat("0.00");
         double fuelRequiere = prkm*this.consumo;
         if(cantidad-fuelRequiere<0){
