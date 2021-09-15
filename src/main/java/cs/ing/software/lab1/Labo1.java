@@ -15,7 +15,9 @@ public class Labo1 {
         Automovil toyota= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
         logger.info(toyota.conduccion(4));
         Automovil hyundai= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
-        logger.info(toyota.conduccion(12));
+        logger.info(hyundai.conduccion(12));
+        Automovil tercel= new Automovil( ConsumoAutomovil, VolumenTanque, cantidad);
+        logger.info(tercel.conduccion(6));
         Camion volvo = new Camion(ConsumoCamion, VolumenTanque, cantidad);
         logger.info(volvo.conduccion(4));
     }
