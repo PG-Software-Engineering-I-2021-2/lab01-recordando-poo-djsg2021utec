@@ -195,6 +195,115 @@ public class Labo1Test {
         Assert.assertEquals(cam17.conduccion(15.5),"Camion viajo 15.5 km y aun tiene 25.70 de combustible");
 
     }
+    @Test
+    public void Test37() {
+        Automovil auto15 = new Automovil(50.5,1.6,85.6);
+        Assert.assertEquals(auto15.abastecer(65.5),"Automovil no se puede reabastecer el tanque, esta lleno");
+
+    }
+    @Test
+    public void Test38() {
+        Automovil auto16 = new Automovil(50.5,0.88,105.6);
+        Assert.assertEquals(auto16.conduccion(10),"Vehiculo viajo 10.0 km y aun tiene 41.70 de combustible");
+
+    }
+    @Test
+    public void Test39() {
+        Automovil auto17 = new Automovil(50.5,0.98,105.6);
+        Assert.assertEquals(auto17.conduccion(11.5),"Vehiculo viajo 11.5 km y aun tiene 39.23 de combustible");
+
+    }
+    @Test
+    public void Test40() {
+        Automovil auto18 = new Automovil(5.5,1.6,95.6);
+        Assert.assertEquals(auto18.abastecer(15.5),"La cantidad de combustible del vehiculo es: 11.0");
+
+    }
+    @Test
+    public void Test41() {
+        Automovil auto19 = new Automovil(20.5,1.9,105.6);
+        Assert.assertEquals(auto19.abastecer(1.8),"La cantidad de combustible del vehiculo es: 41.0");
+
+    }
+    @Test
+    public void Test42() {
+        Automovil auto20 = new Automovil(50.5,1.6,105.6);
+        Assert.assertEquals(auto20.conduccion(15.5),"Vehiculo viajo 15.5 km y aun tiene 25.70 de combustible");
+
+    }
+    @Test
+    public void Test43() {
+        Automovil auto21 = new Automovil(50.5,1.6,145.6);
+        Assert.assertEquals(auto21.abastecer(19.5),"La cantidad de combustible del vehiculo es: 101.0");
+
+    }
+    @Test
+    public void Test44() {
+        Automovil auto23 = new Automovil(50.5,0.658,105.6);
+        Assert.assertEquals(auto23.conduccion(80),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test45() {
+        Automovil auto24 = new Automovil(50.5,1.68,105.6);
+        Assert.assertEquals(auto24.conduccion(51.5),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test46() {
+        Automovil auto25 = new Automovil(350.5,0.86,505.6);
+        Assert.assertEquals(auto25.conduccion(51.5),"Vehiculo viajo 51.5 km y aun tiene 306.21 de combustible");
+
+    }
+    @Test
+    public void Test47() {
+        Automovil auto26 = new Automovil(150.5,0.9,805.6);
+        Assert.assertEquals(auto26.abastecer(109.8),"La cantidad de combustible del vehiculo es: 301.0");
+
+    }
+    @Test
+    public void Test48() {
+        Automovil auto27 = new Automovil(50.5,0.67,1085.6);
+        Assert.assertEquals(auto27.conduccion(1590.5),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test49() {
+        Automovil auto28 = new Automovil(501.5,0.86,1905.6);
+        Assert.assertEquals(auto28.abastecer(144.5),"La cantidad de combustible del vehiculo es: 1003.0");
+
+    }
+    @Test
+    public void Test50() {
+        Automovil auto29 = new Automovil(450.5,0.58,1805.6);
+        Assert.assertEquals(auto29.conduccion(1250),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test51() {
+        Automovil auto30 = new Automovil(502.5,1.2,1058.6);
+        Assert.assertEquals(auto30.conduccion(531.5),"Vehiculo necesita reabastecimiento de combustible");
+
+    }
+    @Test
+    public void Test52() {
+        Camion cam18 = new Camion(250.5,1.67,1305.6);
+        Assert.assertEquals(cam18.abastecer(753.5),"La cantidad de combustible del camion es: 966.3249999999999");
+
+    }
+    @Test
+    public void Test53() {
+        Camion cam19 = new Camion(509.5,1.9,1050.6);
+        Assert.assertEquals(cam19.abastecer(100.8),"La cantidad de combustible del camion es: 605.26");
+
+    }
+    @Test
+    public void Test54() {
+        Camion cam20 = new Camion(15.8,1.6,105.6);
+        Assert.assertEquals(cam20.conduccion(23.4),"Camion necesita reabastecimiento de combustible");
+
+    }
+
 
 
 
