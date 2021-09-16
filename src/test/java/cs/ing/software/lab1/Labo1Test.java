@@ -303,6 +303,41 @@ public class Labo1Test {
         Assert.assertEquals(cam20.conduccion(23.4),"Camion necesita reabastecimiento de combustible");
 
     }
+    @Test
+    public void Test55(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaAuto(4), "Vehiculo viajo 4.0 km y aun tiene 6.40 de combustible");
+    }
+    @Test
+    public void Test56(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaAuto(8), "Vehiculo viajo 8.0 km y aun tiene 2.80 de combustible");
+    }
+    @Test
+    public void Test57(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaAuto(10.2), "Vehiculo viajo 10.2 km y aun tiene 0.82 de combustible");
+    }
+    @Test
+    public void Test58(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaAuto(8.5), "Vehiculo viajo 8.5 km y aun tiene 2.35 de combustible");
+    }
+    @Test
+    public void Test59(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaCamion(8), "Camion viajo 8.0 km y aun tiene 2.80 de combustible");
+    }
+    @Test
+    public void Test60(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaCamion(10.2), "Camion viajo 10.2 km y aun tiene 0.82 de combustible");
+    }
+    @Test
+    public void Test61(){
+        Labo1 hola = new Labo1();
+        Assert.assertEquals(hola.pruebaCamion(8.5), "Camion viajo 8.5 km y aun tiene 2.35 de combustible");
+    }
 
 
 

@@ -3,31 +3,35 @@ import java.util.logging.Logger;
 
 
 
-<span class="nc" id="L6">public class Labo1 {</span>
-<span class="nc" id="L7">    static final Logger logger = Logger.getLogger(Labo1.class.getName());</span>
-<span class="nc" id="L8">    static double consumoVehiculo = 0.9;</span>
-<span class="nc" id="L9">    static double consumoCamion = 1.6;</span>
-<span class="nc" id="L10">    static double capacidadTotal = 100;</span>
-<span class="nc" id="L11">    static double fuelCantidad = 10;</span>
+<span class="fc" id="L6">public class Labo1 {</span>
+<span class="fc" id="L7">    static final Logger logger = Logger.getLogger(Labo1.class.getName());</span>
+<span class="fc" id="L8">    static double consumoVehiculo = 0.9;</span>
+<span class="fc" id="L9">    static double consumoCamion = 1.6;</span>
+<span class="fc" id="L10">    static double capacidadTotal = 100;</span>
+<span class="fc" id="L11">    static double fuelCantidad = 10;</span>
+    String pruebaAuto(double km){
+<span class="fc" id="L13">        Automovil auto1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
+<span class="fc" id="L14">        return (auto1.conduccion(km));</span>
+    }
+    String pruebaCamion(double km){
+<span class="fc" id="L17">        Camion cam1 = new Camion(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
+<span class="fc" id="L18">        return (cam1.conduccion(km));</span>
+    }
+
     public static void main(String[ ] args) {
 
-
-
 //Auto 1
-<span class="nc" id="L17">        Automovil auto1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
-<span class="nc" id="L18">        logger.info(auto1.conduccion(4));</span>
+<span class="nc" id="L24">        Automovil auto1 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
+<span class="nc" id="L25">        String r1 = auto1.conduccion(4);</span>
+<span class="nc" id="L26">        logger.info(r1);</span>
 
 //Auto 2
-<span class="nc" id="L21">        Automovil auto2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
-<span class="nc" id="L22">        logger.info(auto2.conduccion(12));</span>
+<span class="nc" id="L29">        Automovil auto2 = new Automovil(fuelCantidad,consumoVehiculo,capacidadTotal);</span>
+<span class="nc" id="L30">        String r2 = auto2.conduccion(12);</span>
+<span class="nc" id="L31">        logger.info(r2);</span>
 
-//Auto 3
-<span class="nc" id="L25">        Automovil auto3 = new Automovil(25.8,0.91,105.6);</span>
-<span class="nc" id="L26">        logger.info(auto3.conduccion(4));</span>
-//Auto 3
-<span class="nc" id="L28">        Automovil auto4 = new Automovil(25.8,1.1,105.6);</span>
-<span class="nc" id="L29">        logger.info(auto4.conduccion(7.9));</span>
 
-<span class="nc" id="L31">    }</span>
+
+<span class="nc" id="L35">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
